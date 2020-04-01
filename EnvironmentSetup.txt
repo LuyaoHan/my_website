@@ -1,0 +1,8 @@
+Sublime
+GitBash
+
+After installing git bash, it is very slow on Win10. Open CMD with administrator access, copy in+enter the following:
+set G=c:\path\to\latest\git
+set PATH=%G%\bin;%G%\usr\bin;%G%\mingw64\bin
+set PATH=%PATH%;C:\windows\system32;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\
+set HOME=%USERPROFILE%
