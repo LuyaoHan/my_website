@@ -6,3 +6,31 @@ set G=c:\path\to\latest\git
 set PATH=%G%\bin;%G%\usr\bin;%G%\mingw64\bin
 set PATH=%PATH%;C:\windows\system32;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\
 set HOME=%USERPROFILE%
+
+
+
+
+
+#For quick hdml auto-complete
+To install any Sublime package you need to install Package Installer. For installing go to Tools ->Install Package Control and click on it and it will be installed automatically. When you are done with installing package control again go to Tools-> command palette and search for Install Package.
+When you click on Install Package you will see some processing at bottom of your Sublime window and a search popup will be opened.
+
+You can search for any Sublime plugin here. Search for “Emmet” and click on it to install it.
+
+
+
+To get a quick html code, "<html" and hit Enter to get the following:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+W
