@@ -3,81 +3,138 @@
 
 
 <head>
-	<style type="text/css">
-		body{
-			background-image:url(img/geometry.png);
-			background-repeat: repeat-y;
-			position: static;
-		}
-	</style>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<div class="poster-page" style="position: relative;">
 		<title>title: luyao-han.online</title>
 		
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</div>
 </head>
 
 <body>
+	<style type="text/css">
+		body{	
+			margin: 0;
+			padding: 0;
+			background-color: #f0932b;
+			background-repeat: repeat-y;
+			position: absolute;
+			<!-- background-image:url(img/geometry.png);  -->
+		}
+	</style>
+
 	<div class="header">
 		<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-		<font style = "font-family: 'Monoton', cursive;font-size: 60px;color: white">
+		<font style = "font-family: 'Monoton', cursive; font-size: 5vw; position: relative;top: 1vw; left: 1vw; color: white">
 			Welcome to my website 
 		</font>
 	</div>
+
+	<section>
+		<ul class="nav-bar">
+		<style type="text/css">
+			.nav-bar{
+				list-style: none;
+				background-color: #595959;
+				text-align: justify-all;
+				width: 80vw;
+				padding-top: 1vh;
+				padding-bottom: 1vh;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				position: relative;
+				top: 1vh;
 	
-	<ul class="nav-bar">	
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-		<li><a href="index.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Home
-			</font> 
-			<a/>
-		</li>
-		<li><a href="images.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Images
-			</font> 
-			<a/>
-		</li>
-		<li><a href="videos.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Videos
-			</font> 
-			<a/>
-		</li>
-		<li><a href="projects.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Projects
-			</font> 
-			<a/>
-		</li>
+			}
+
+			.nav-bar > li{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+			}
+			
+			.nav-bar > li > a{			/* all the a href links in the list*/
+				text-decoration:none;	/*get rid of underline*/
+				color: white
+			}
+			
+			.nav-bar > li > a:hover{	/*tab changes color when mou hover*/
+				color:orchid;
+			}
+		</style>	
+
+			<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+			<li><a href="index.html">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Home
+				</font>
+				<a/> 
+			</li>
+			<li><a href="images.html">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Images
+				</font> 
+				<a/>
+			</li>
+			<li><a href="videos.html">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Videos
+				</font> 
+				<a/>
+			</li>
+			<li><a href="projects.html">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Projects
+				</font>
+				<a/> 
+			</li>
+			
+		</ul>
+	</section>
+
+
+	<section class="videos-content"style="height:100vh; width: 100vw; display: block; align-items: center;justify-content: center; position: relative; margin: auto;">
 		
-	</ul>
-
-	<font style = "font-family: 'Orbitron', sans-serif;font-size: 30px;color: white; position: absolute; top: 28%; left:5%;">
+		<font style = "font-family: 'Orbitron', sans-serif;font-size: 30px;color: white; position: absolute; top: 28%; left:5%; align-items: center; justify-content: center;">
 		Videos
-	</font>
-	<div class="videos-content" style = "padding-top: 60px; position: absolute; top: 25%">
-		<td>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/lnVGgiAaswA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</td>
-		<td>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Pr141CuQJmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</td>
-		<td>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jO1bDcLARtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</td>
-		<td>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/5fgy8iNH29A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</td>
+		</font>
+		<section style = "padding-top: 60px; position: absolute; top: 25%">
+			<td>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/lnVGgiAaswA" frameborder="0" allow=	"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			<td>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Pr141CuQJmg" frameborder="0" allow=	"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			<td>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/jO1bDcLARtQ" frameborder="0" allow=	"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			<td>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5fgy8iNH29A" frameborder="0" allow=	"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+	
+		</section>
 
-	</div>
+	</section>
+	
+	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
+		Section 1	
+	</section>
+	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
+		Section 2	
+	</section>
+	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
+		Section 3	
+	</section>
+
+	<a href="https://github.com/LuyaoHan" class="tab-github">
+			<img src="img/github-logo.png" width="300" height="200" class="github-logo" style="position: absolute; align-items: center; justify-content: center;">
+	</a>
+
+
 </body>
-
-
-
 </html>
+
+
 
 
 
