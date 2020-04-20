@@ -54,6 +54,15 @@
 			.nav-bar > li{				/*list elements in class nav-bar*/
 				display: inline-block;  /*make nav-bar horizontal*/
 				padding-right: 8vw; /*make tabs spread out*/
+				
+  				
+			}
+
+			.nav-bar > li:hover{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+				
+  				
 			}
 			
 			.nav-bar > li > a{			/* all the a href links in the list*/
@@ -63,29 +72,46 @@
 			
 			.nav-bar > li > a:hover{	/*tab changes color when mou hover*/
 				color:orchid;
+				border: 1px solid #ccc;
+  				background-color: #f1f1f1;
+  				width: 2vw;
+  				height: 4vh;
+  				color: #6e7fc9;
 			}
 		</style>	
 
 			<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-			<li><a href="index.html">
+			<li><a href="index.html" class="home">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Home
 				</font>
 				<a/> 
+				<style type="text/css">
+					.home{
+						border: 1px solid #ccc;
+  						background-color: #f1f1f1;
+  						width: 2vw;
+  						height: 4vh;
+  						
+					}
+					.home > font{
+						color: #6e7fc9;
+					}
+				</style>
 			</li>
-			<li><a href="images.html">
+			<li><a href="images.html" class="images">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Images
 				</font> 
 				<a/>
 			</li>
-			<li><a href="videos.html">
+			<li><a href="videos.html" class="videos">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Videos
 				</font> 
 				<a/>
 			</li>
-			<li><a href="projects.html">
+			<li><a href="projects.html" class="projects">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Projects
 				</font>
@@ -136,7 +162,7 @@
 				if(window.pageYOffset > 100){
 					toTop.classList.add("active");
 				}else{
-					toTop.classList.remove("activeAA");
+					toTop.classList.remove("active");
 				}
 				
 			}

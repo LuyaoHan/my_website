@@ -38,9 +38,9 @@
 	position: fixed;
 	bottom: 16px;
 	right: 32px;
-	width: 50px;
+	width: 200px;
 	height: 50px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	display: flex;
 	align-content: : center;
 	justify-content: center;

@@ -12,6 +12,7 @@
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -46,12 +47,19 @@
 				padding-right: 1vw;
 				position: relative;
 				top: 1vh;
-	
 			}
 
 			.nav-bar > li{				/*list elements in class nav-bar*/
 				display: inline-block;  /*make nav-bar horizontal*/
 				padding-right: 8vw; /*make tabs spread out*/
+				
+			}
+
+			.nav-bar > li:hover{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+				
+  				
 			}
 			
 			.nav-bar > li > a{			/* all the a href links in the list*/
@@ -61,29 +69,46 @@
 			
 			.nav-bar > li > a:hover{	/*tab changes color when mou hover*/
 				color:orchid;
+				border: 1px solid #ccc;
+  				background-color: #f1f1f1;
+  				width: 2vw;
+  				height: 4vh;
+  				color: #6e7fc9;
 			}
 		</style>	
 
 			<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-			<li><a href="index.html">
+			<li><a href="index.html" class="home">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Home
 				</font>
 				<a/> 
 			</li>
-			<li><a href="images.html">
+			<li><a href="images.html" class="images">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Images
 				</font> 
 				<a/>
+				<style type="text/css">
+					.images{
+						border: 1px solid #ccc;
+  						background-color: #f1f1f1;
+  						width: 2vw;
+  						height: 4vh;
+  						
+					}
+					.images > font{
+						color: #6e7fc9;
+					}
+				</style>
 			</li>
-			<li><a href="videos.html">
+			<li><a href="videos.html" class="videos">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Videos
 				</font> 
 				<a/>
 			</li>
-			<li><a href="projects.html">
+			<li><a href="projects.html" class="projects">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Projects
 				</font>
@@ -117,7 +142,8 @@
 		<script type="text/javascript" src="lightbox-plus-jquery.min.js">
 			
 		</script>
-		<section style = "display: inline-table; position: relative; align-items: center; justify-content: center;">
+		<!-- light box widget from //lokeshdhakar.com/projects/lightbox2/ -->
+		<section style = "display: inline-table; position: relative; align-items: center; justify-content: center; align-content: center; justify-content: center;">
 			<a href="img/photo1.jpg" data-lightbox = "gallery"><img src="img/photo1.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;"></a>
 			<a href="img/photo2.jpg" data-lightbox = "gallery"><img src="img/photo2.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
 			<a href="img/photo3.jpg" data-lightbox = "gallery"><img src="img/photo3.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
@@ -134,10 +160,10 @@
 	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
 		Section 1	
 	</section>
-	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
+	<section class="section 2" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
 		Section 2	
 	</section>
-	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
+	<section class="section 3" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
 		Section 3	
 	</section>
 
@@ -147,14 +173,14 @@
 
 	<!-- Scroll Up Butoon -->
 	<a href="#" class="button-to-top">
-		<i class="scroll-icon">top</i>
+		<i class="scroll-icon">Back to Top</i>
 		<script type="text/javascript">
 			const toTop = document.querySelector(".button-to-top");
 			window.addEventListener("scroll",()=>{
 				if(window.pageYOffset > 100){
 					toTop.classList.add("active");
 				}else{
-					toTop.classList.remove("activeAA");
+					toTop.classList.remove("active");
 				}
 				
 			}

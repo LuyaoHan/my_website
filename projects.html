@@ -10,6 +10,7 @@
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 		<style type="text/css">
 			.nav-bar{
 				list-style: none;
-				background-color: #f0932b;
+				background-color: #595959;
 				text-align: justify-all;
 				width: 80vw;
 				padding-top: 1vh;
@@ -44,12 +45,19 @@
 				padding-right: 1vw;
 				position: relative;
 				top: 1vh;
-	
 			}
 
 			.nav-bar > li{				/*list elements in class nav-bar*/
 				display: inline-block;  /*make nav-bar horizontal*/
 				padding-right: 8vw; /*make tabs spread out*/
+				
+			}
+
+			.nav-bar > li:hover{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+				
+  				
 			}
 			
 			.nav-bar > li > a{			/* all the a href links in the list*/
@@ -59,46 +67,63 @@
 			
 			.nav-bar > li > a:hover{	/*tab changes color when mou hover*/
 				color:orchid;
+				border: 1px solid #ccc;
+  				background-color: #f1f1f1;
+  				width: 2vw;
+  				height: 4vh;
+  				color: #6e7fc9;
 			}
-		</style>	
+		</style>
 
 			<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-			<li><a href="index.html">
+			<li><a href="index.html" class="home">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Home
 				</font>
 				<a/> 
 			</li>
-			<li><a href="images.html">
+			<li><a href="images.html" class="images">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Images
 				</font> 
 				<a/>
 			</li>
-			<li><a href="videos.html">
+			<li><a href="videos.html" class="videos">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Videos
 				</font> 
 				<a/>
 			</li>
-			<li><a href="projects.html">
+			<li><a href="projects.html" class="projects">
 				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
 				Projects
 				</font>
 				<a/> 
+				<style type="text/css">
+					.projects{
+						border: 1px solid #ccc;
+  						background-color: #f1f1f1;
+  						width: 2vw;
+  						height: 4vh;
+  						
+					}
+					.projects > font{
+						color: #6e7fc9;
+					}
+				</style>
 			</li>
 			
 		</ul>
 	</section>
 
 
-	<section class="projects-content"style="height:100vh; width: 100vw; display: block; align-items: center;justify-content: center; position: relative; ">
+	<section class="projects-content"style="height:150vh; width: 100vw; display: block; align-items: center;justify-content: center; position:relative;">
 		
-		<font style = "font-family: 'Orbitron', sans-serif;font-size: 30px;color: white; position: absolute; top: 28%; left:5%;">
+		<font style = "font-family: 'Orbitron', sans-serif;font-size: 4vw;color: white; position: relative; ">
 			Projects
 		</font>
 
-		<div style = "padding-top: 60px; padding:10px; position: absolute; top: 32%">
+		<div style = "padding:10px; position: relative;">
 			<ul>
 				<a href="project1.html">
 					<img src="img/project1.jpg", width=200 height=150>
