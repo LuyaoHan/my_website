@@ -19,7 +19,7 @@
 		body{	
 			margin: 0;
 			padding: 0;
-			background-color: #f0932b;
+			background-color: #eb4d4b;
 			background-repeat: repeat-y;
 			position: absolute;
 		}
@@ -95,20 +95,40 @@
 
 
 	<section class="pictures-content"style="height:100vh; width: 100vw; display: block; align-items: center;justify-content: center; position: relative; ">
-		
+		<!-- light box -->
+		<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+		<style type="text/css">
+			.pictures-content{
+				margin: 20px 20px;
+			}
+			.pictures-content > section > a >img{
+				filter:grayscale(60%);
+				transition: 0.5s;
+			}
+			.pictures-content > section > a > img:hover{
+				filter: grayscale(0);
+				transform: scale(1.1);
+			}
+		</style>
 		<font style = "font-family: 'Orbitron', sans-serif;font-size: 4vw;color: white; position: relative; ">
 			Images
 		</font>
 
-		<section style = "display: inline-table; position: relative; align-items: center; justify-content: center;" >
-			<img src="img/photo1.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
-			<img src="img/photo2.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
-			<img src="img/photo3.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
-			<img src="img/photo4.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
-			<img src="img/photo5.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
-			<img src="img/photo6.jpg", style = "padding-top:20px; padding-right:20px; width:25vw; height:25vh;">
+		<script type="text/javascript" src="lightbox-plus-jquery.min.js">
+			
+		</script>
+		<section style = "display: inline-table; position: relative; align-items: center; justify-content: center;">
+			<a href="img/photo1.jpg" data-lightbox = "gallery"><img src="img/photo1.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;"></a>
+			<a href="img/photo2.jpg" data-lightbox = "gallery"><img src="img/photo2.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo3.jpg" data-lightbox = "gallery"><img src="img/photo3.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo4.jpg" data-lightbox = "gallery"><img src="img/photo4.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo5.jpg" data-lightbox = "gallery"><img src="img/photo5.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo6.jpg" data-lightbox = "gallery"><img src="img/photo6.jpg", width=400px height=300px style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo7.jpg" data-lightbox = "gallery"><img src="img/photo7.jpg",  style = "padding-top:20px; padding-right:20px;">
+			<a href="img/photo8.jpg" data-lightbox = "gallery"><img src="img/photo8.jpg",  style = "padding-top:20px; padding-right:20px;">
 		</section>
-
+	
+		
 	</section>
 	
 	<section class="section 1" style="height: 75vh; display: flex; align-items: center;justify-content: center;font-family: 'Raleway', sans-serif;font-style: 32px; text-transform: uppercase;letter-spacing: 8px;" >
@@ -125,7 +145,23 @@
 			<img src="img/github-logo.png" width="300" height="200" class="github-logo" style="position: absolute; align-items: center; justify-content: center;">
 	</a>
 
+	<!-- Scroll Up Butoon -->
+	<a href="#" class="button-to-top">
+		<i class="scroll-icon">top</i>
+		<script type="text/javascript">
+			const toTop = document.querySelector(".button-to-top");
+			window.addEventListener("scroll",()=>{
+				if(window.pageYOffset > 100){
+					toTop.classList.add("active");
+				}else{
+					toTop.classList.remove("activeAA");
+				}
+				
+			}
 
+			)
+		</script>
+	</a>
 </body>
 
 

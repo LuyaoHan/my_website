@@ -10,6 +10,7 @@
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -20,6 +21,9 @@
 			background-color: #f0932b;
 			background-repeat: repeat-y;
 			position: absolute;
+		}
+		html{
+			scroll-behavior: smooth;
 		}
 	</style>
 
@@ -94,10 +98,9 @@
 
 	<section class="intro"style="height:100vh; width: 70vw; display: block; align-items: center;justify-content: center; position: relative;">
 		
-		<img src="img/profile-figure.jpg" style="position: relative; top: 1vh; left: 1vw; width:40vw; height:30vh;">
-		
+		<img src="img/profile-figure.jpg" style="position: relative; top: 1vh; left: 1vw; width:40vw; height:40vh;">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 4vw; color: white; position: relative; top: 0vw; left:10vw;">
+		<font style = "font-family: 'Orbitron', sans-serif;font-size: 4vw; color: white; position: relative; top: 0vw; left:10vw;">
 					About me
 					<font style = "font-family: 'Raleway', sans-serif;font-size: 2vw;color: white; position: relative; 	top: 0vw; right:5vw; padding-left: 1vw; padding-right: 1vw; width: 60%">
 					<p>
@@ -124,7 +127,23 @@
 			<img src="img/github-logo.png" width="300" height="200" class="github-logo" style="position: absolute; align-items: center; justify-content: center;">
 	</a>
 
+	<!-- Scroll Up Butoon -->
+	<a href="#" class="button-to-top">
+		<i class="scroll-icon"></i>
+		<script type="text/javascript">
+			const toTop = document.querySelector(".button-to-top");
+			window.addEventListener("scroll",()=>{
+				if(window.pageYOffset > 100){
+					toTop.classList.add("active");
+				}else{
+					toTop.classList.remove("activeAA");
+				}
+				
+			}
 
+			)
+		</script>
+	</a>
 </body>
 
 
