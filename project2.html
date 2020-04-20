@@ -1,68 +1,140 @@
+</html>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 
+
 <head>
-	<style type="text/css">
-		body{
-			background-image:url(img/geometry.png);
-			background-repeat: repeat-y;
-			position: static;
-		}
-	</style>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<div class="poster-page" style="position: relative;">
 		<title>title: luyao-han.online</title>
 		
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+	<style type="text/css">
+		body{	
+			margin: 0;
+			padding: 0;
+			background-color: #f0932b;
+			background-repeat: repeat-y;
+			position: absolute;
+		}
+	</style>
+
 	<div class="header">
 		<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-		<font style = "font-family: 'Monoton', cursive;font-size: 60px;color: white">
+		<font style = "font-family: 'Monoton', cursive; font-size: 5vw; position: relative;top: 1vw; left: 1vw; color: white">
 			Welcome to my website 
 		</font>
 	</div>
-	
-	<ul class="nav-bar">	
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-		<li><a href="index.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Home
-			</font> 
-			<a/>
-		</li>
-		<li><a href="images.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Images
-			</font> 
-			<a/>
-		</li>
-		<li><a href="videos.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Videos
-			</font>
-			<a/> 
-		</li>
-		<li><a href="projects.html">
-			<font style = "font-family: 'Orbitron', sans-serif;font-size: 20px;">
-			Projects
-			</font> 
-			<a/>
-		</li>
-		
-	</ul>
+
+	<section>
+		<ul class="nav-bar">
+		<style type="text/css">
+			.nav-bar{
+				list-style: none;
+				background-color: #595959;
+				text-align: justify-all;
+				width: 80vw;
+				padding-top: 1vh;
+				padding-bottom: 1vh;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				position: relative;
+				top: 1vh;
+			}
+
+			.nav-bar > li{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+				
+			}
+
+			.nav-bar > li:hover{				/*list elements in class nav-bar*/
+				display: inline-block;  /*make nav-bar horizontal*/
+				padding-right: 8vw; /*make tabs spread out*/
+				
+  				
+			}
+			
+			.nav-bar > li > a{			/* all the a href links in the list*/
+				text-decoration:none;	/*get rid of underline*/
+				color: white
+			}
+			
+			.nav-bar > li > a:hover{	/*tab changes color when mou hover*/
+				color:orchid;
+				border: 1px solid #ccc;
+  				background-color: #f1f1f1;
+  				width: 2vw;
+  				height: 4vh;
+  				color: #6e7fc9;
+			}
+		</style>
+
+			<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+			<li><a href="index.html" class="home">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Home
+				</font>
+				<a/> 
+			</li>
+			<li><a href="images.html" class="images">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Images
+				</font> 
+				<a/>
+			</li>
+			<li><a href="videos.html" class="videos">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Videos
+				</font> 
+				<a/>
+			</li>
+			<li><a href="projects.html" class="projects">
+				<font style = "font-family: 'Orbitron', sans-serif;font-size: 1vw;">
+				Projects
+				</font>
+				<a/> 
+				<style type="text/css">
+					.projects{
+						border: 1px solid #ccc;
+  						background-color: #f1f1f1;
+  						width: 2vw;
+  						height: 4vh;
+  						
+					}
+					.projects > font{
+						color: #6e7fc9;
+					}
+				</style>
+			</li>
+			
+		</ul>
+	</section>
 
 
-	<div class="project2-content" style = "display: block; padding:10px; position: absolute; top: 25%">
+	<div class="project2-content" style = "display: block; padding:10px; position: relative; top: 25%">
 		<font color="cyan" style="padding-left: 40px;">"A home-base Linux Server"</font>
 	</div>
+
+
 </body>
 
 
 
 </html>
+
+
 
 
 
